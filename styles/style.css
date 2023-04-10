@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@100;400&display=swap");
+
+:root {
+  --font-color-heading: hsl(0, 0%, 95%);
+  --font-color-p: hsla(0, 0%, 100%, 0.75);
+
+  --background-color-main: hsl(0, 0%, 95%);
+  --bg-color-1: hsl(31, 77%, 52%);
+  --bg-color-2: hsl(184, 100%, 22%);
+  --bg-color-3: hsl(179, 100%, 13%);
+  --ff-heading: "Big Shoulders Display", cursive;
+  --ff-p: "Lexend Deca", sans-serif;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-main);
+  padding: 5.5rem 1.5rem;
+  font-family: var(--ff-p);
+  font-weight: var(--fw-normal);
+}
+/* img {
+  max-width: max-content;
+} */
+.car-profile {
+  /* min-height: 442px; */
+  padding: 3rem;
+  display: grid;
+  gap: 2rem;
+  color: var(--font-color-p);
+}
+
+.heading {
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  font-size: 2.5rem;
+}
+
+p {
+  letter-spacing: 0.1px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--font-color-p);
+}
+
+.more-detail {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-color-1);
+  border-radius: 24px;
+  max-width: 9.125rem;
+  height: 3rem;
+  background-color: var(--background-color-main);
+  font-weight: 400;
+}
+
+/* Utility */
+.bg-color-1 {
+  background: var(--bg-color-1);
+}
+
+.cl-1 {
+  color: var(--bg-color-1);
+}
+
+.cl-1:hover {
+  background-color: var(--bg-color-1);
+  color: var(--font-color-p);
+  border: 2px solid var(--font-color-heading);
+}
+
+.bg-color-2 {
+  background: var(--bg-color-2);
+}
+.cl-2 {
+  color: var(--bg-color-2);
+}
+.cl-2:hover {
+  background-color: var(--bg-color-2);
+  color: var(--font-color-p);
+  border: 2px solid var(--font-color-heading);
+}
+
+.bg-color-3 {
+  background: var(--bg-color-3);
+}
+.cl-3 {
+  color: var(--bg-color-3);
+}
+.cl-3:hover {
+  background-color: var(--bg-color-3);
+  color: var(--font-color-p);
+  border: 2px solid var(--font-color-heading);
+}
+
+.car-profile:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.car-profile:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Large Screen */
+@media (min-width: 930px) {
+  main {
+    font-family: var(--ff-p);
+    font-weight: var(--fw-normal);
+  }
+  .profile-container {
+    display: grid;
+    max-height: 500px;
+    grid-template-columns: repeat(3, 307px);
+  }
+
+  .car-profile:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .car-profile:last-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .car-profile {
+    color: var(--font-color-p);
+  }
+
+  .more-detail {
+    margin-top: 3rem;
+  }
+}
+
+.attribution {
+  padding: 1rem;
+  background-color: #515659;
+  color: #97a3a6;
+  font-family: var(--ff-p);
+}
+.attribution > a {
+  text-decoration: none;
+  color: #97a3a6;
+  padding: 0.15rem;
+  border-bottom: 1px solid #97a3a6;
+}
+.attribution > a:hover {
+  border-bottom: 1px solid #262626;
+}
